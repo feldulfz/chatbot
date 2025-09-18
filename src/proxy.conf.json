@@ -1,0 +1,14 @@
+{
+  "/api": {
+    "target": "https://openrouter.ai",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": "/api"
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Authorization": "Bearer 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"
+    }
+  }
+}
