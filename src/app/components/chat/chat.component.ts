@@ -1,7 +1,7 @@
 import { Component, computed, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { AiService } from '../../services/claude/ai.service';
+import { AiService } from '../../services/ai-serrvice/ai.service';
 
 @Component({
   selector: 'app-chat',

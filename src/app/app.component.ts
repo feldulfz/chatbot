@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ChatComponent } from './components/chat/chat.component';
-import { AiService } from './services/claude/ai.service';
+import { AiService } from './services/ai-serrvice/ai.service';
 
 @Component({
   selector: 'app-root',
