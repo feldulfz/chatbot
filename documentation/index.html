@@ -97,6 +97,83 @@
                    <div class="content-data">
 
 
+<h1>Angular AI Portfolio Chatbot</h1>
+<p><a href="https://deepwiki.com/feldulfz/chatbot"><img src="https://devin.ai/assets/askdeepwiki.png" alt="Ask DeepWiki" class="img-responsive"></a></p>
+<p>This repository contains the source code for an AI-powered chatbot built with Angular. The application features a floating chat widget that interacts with an AI model through a backend proxy. The chatbot is designed to function as a &quot;Portfolio Bot,&quot; answering questions based on a provided context.</p>
+<h2>Core Technologies</h2>
+<ul>
+<li><strong>Angular 19</strong>: Frontend framework for building the application.</li>
+<li><strong>TypeScript</strong>: Primary language for the application logic.</li>
+<li><strong>SCSS</strong>: For styling the components.</li>
+<li><strong>Angular Signals</strong>: For reactive state management within the application.</li>
+<li><strong>OpenRouter / DeepSeek</strong>: The AI service providing the chat completions, proxied during development.</li>
+<li><strong>Compodoc</strong>: For generating code documentation.</li>
+</ul>
+<h2>Features</h2>
+<ul>
+<li>Floating chat widget that can be toggled on and off.</li>
+<li>Real-time messaging interface displaying user and assistant messages with timestamps.</li>
+<li>Context-aware conversations based on a configurable system prompt.</li>
+<li>API integration with a proxied AI backend (OpenRouter).</li>
+<li>Loading indicators while the AI is generating a response.</li>
+<li>Error handling and display for API-related issues.</li>
+<li>Responsive design for the chat components.</li>
+</ul>
+<h2>Project Structure</h2>
+<b>Example :</b><div><pre class="line-numbers"><code class="language-none">.
+├── documentation/       # Auto-generated documentation by Compodoc
+├── src/
+│   ├── app/
+│   │   ├── components/
+│   │   │   └── chat/      # The main chat widget component and logic
+│   │   ├── services/
+│   │   │   └── ai.service.ts # Service for handling AI API communication
+│   │   ├── app.component.ts  # Root application component
+│   │   └── app.config.ts     # Main application configuration
+│   ├── environments/      # Environment-specific settings
+│   └── proxy.conf.json    # Proxy configuration for local development
+├── angular.json         # Angular CLI configuration
+└── package.json         # Project dependencies and scripts</code></pre></div><h2>Local Development</h2>
+<h3>Prerequisites</h3>
+<ul>
+<li>Node.js and npm</li>
+<li>Angular CLI</li>
+</ul>
+<h3>Setup</h3>
+<ol>
+<li><p><strong>Clone the repository:</strong></p>
+<b>Example :</b><div><pre class="line-numbers"><code class="language-bash">git clone https://github.com/feldulfz/chatbot.git
+cd chatbot</code></pre></div></li>
+<li><p><strong>Install dependencies:</strong></p>
+<b>Example :</b><div><pre class="line-numbers"><code class="language-bash">npm install</code></pre></div></li>
+<li><p><strong>Run the development server:</strong>
+The project is configured to use a proxy for API requests to avoid CORS issues.</p>
+<b>Example :</b><div><pre class="line-numbers"><code class="language-bash">npm start</code></pre></div><p>The application will be available at <code>http://localhost:4200/</code>.</p>
+</li>
+</ol>
+<h3>Configuration</h3>
+<p>The application communicates with the OpenRouter API. A development API key is hardcoded for convenience.</p>
+<ul>
+<li><code>src/proxy.conf.json</code>: This file configures the proxy to route <code>/api</code> requests to <code>https://openrouter.ai</code> and includes the necessary authorization headers.</li>
+<li><code>src/app/services/ai-serrvice/ai.service.ts</code>: The <code>AiService</code> contains the API key and logic for making requests to the AI model.</li>
+<li><code>src/app/app.component.ts</code>: The <code>setTheContenxt()</code> method sets the initial system prompt for the chatbot. This method is triggered by a button in the UI.</li>
+</ul>
+<h2>Usage</h2>
+<ol>
+<li>Open the application in your browser.</li>
+<li>Click the red &quot;Button Initialize Context&quot; to provide the initial system prompt to the AI.</li>
+<li>Click the floating chat icon in the bottom right corner to open the chat widget.</li>
+<li>Type your message in the input box and press Enter or click the send button to interact with the Portfolio Bot.</li>
+</ol>
+<h2>Available Scripts</h2>
+<ul>
+<li><code>npm start</code>: Starts the local development server with the proxy configuration.</li>
+<li><code>npm run build</code>: Compiles the application for production.</li>
+<li><code>npm run test</code>: Executes unit tests via Karma.</li>
+<li><code>npm run compodoc:build-and-serve</code>: Generates and serves the code documentation.</li>
+</ul>
+<h2>Documentation</h2>
+<p>This project includes automatically generated documentation created by Compodoc. To view it, run <code>npm run compodoc:build-and-serve</code> and navigate to the provided URL. The static documentation is also available in the <code>/documentation</code> directory.</p>
 
 
 
