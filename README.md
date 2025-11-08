@@ -1,4 +1,4 @@
-# Angular AI Portfolio Chatbot
+# Angular AI Portfolio Chatbot (NOTE: NEED SOME FIX API KEY SHOULD BE ON THE BACK-END.)
 [![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/feldulfz/chatbot)
 
 This repository contains the source code for an AI-powered chatbot built with Angular. The application features a floating chat widget that interacts with an AI model through a backend proxy. The chatbot is designed to function as a "Portfolio Bot," answering questions based on a provided context.
