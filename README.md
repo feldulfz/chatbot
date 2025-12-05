@@ -116,26 +116,26 @@ This project uses Compodoc to generate documentation from the source code. To vi
 
 ### Environment file configuration
 
-![chatbor_1](ReadMeImages/chatbor_1.png 'chatbor_1')
+![chatbot_1](ReadMeImages/chatbot_1.png 'chatbot_1')
 
 ### Run local server for backend api key
 
-![chatbor_2](ReadMeImages/chatbor_2.png 'chatbor_2')
+![chatbot_2](ReadMeImages/chatbot_2.png 'chatbot_2')
 
 ### Set chatbot context
 
-![chatbor_3](ReadMeImages/chatbor_3.png 'chatbor_3')
+![chatbot_3](ReadMeImages/chatbot_3.png 'chatbot_3')
 
 ### Use the chatbot
 
-![chatbor_4](ReadMeImages/chatbor_4.png 'chatbor_4')
+![chatbot_4](ReadMeImages/chatbot_4.png 'chatbot_4')
 
-![chatbor_5](ReadMeImages/chatbor_5.png 'chatbor_5')
+![chatbot_5](ReadMeImages/chatbot_5.png 'chatbot_5')
 
 ### Ask chatbot related to context
 
-![chatbor_6](ReadMeImages/chatbor_6.png 'chatbor_6')
+![chatbot_6](ReadMeImages/chatbot_6.png 'chatbot_6')
 
 ### Chatbot cannot answer outside the context
 
-![chatbor_7](ReadMeImages/chatbor_7.png 'chatbor_7')
+![chatbot_7](ReadMeImages/chatbot_7.png 'chatbot_7')
