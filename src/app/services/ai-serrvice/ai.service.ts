@@ -1,5 +1,4 @@
 import { Injectable, signal } from '@angular/core';
-import { environment } from '../../../environments/environment';
 
 export interface Message {
   role: 'user' | 'assistant' | 'system';
@@ -17,8 +16,7 @@ export interface ChatContext {
 })
 export class AiService {
 
-  private apiKey = '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';
-  private apiUrl = '/api/v1/chat/completions';
+  private apiUrl = 'http://localhost:3000/api/v1/chat/completions';
 
   // Signals for reactive state management
   messages = signal<Message[]>([]);
@@ -36,13 +34,6 @@ export class AiService {
   }
 
   async sendMessage(userMessage: string): Promise<void> {
-    if (!this.apiKey || this.apiKey !== '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') {
-      this.error.set('Please configure your Anthropic API key in the environment file');
-      return;
-    }    
-
-    // this.setContext('You are a chatbot that must ONLY answer questions using the following context: The cat chased another cat across the yard, while a third cat watched from the fence, and a fourth cat pounced as the last cat ran away. If the user asks something not related to this context, reply: "I can only answer questions about the given context."');
-
     // Add user message to the chat
     const newUserMessage: Message = {
       role: 'user',
@@ -77,7 +68,7 @@ export class AiService {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            model: 'deepseek/deepseek-r1-0528-qwen3-8b:free',
+            model: 'deepseek/deepseek-v3.2',
             messages: [
               systemMessage, 
               ...apiMessages
