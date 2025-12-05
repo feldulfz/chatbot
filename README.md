@@ -1,4 +1,4 @@
-# Angular AI Portfolio Chatbot
+# Angular Context-Aware AI Chatbot
 
 ![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
