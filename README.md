@@ -109,3 +109,33 @@ This project requires running a local Node.js proxy server in one terminal and t
 ## Documentation
 
 This project uses Compodoc to generate documentation from the source code. To view it, run `npm run compodoc:build-and-serve` and navigate to the provided local URL. A pre-built version of the documentation is also available in the `/documentation` directory of this repository.
+
+---
+
+## Visuals
+
+### Environment file configuration
+
+![chatbor_1](ReadMeImages/chatbor_1.png 'chatbor_1')
+
+### Run local server for backend api key
+
+![chatbor_2](ReadMeImages/chatbor_2.png 'chatbor_2')
+
+### Set chatbot context
+
+![chatbor_3](ReadMeImages/chatbor_3.png 'chatbor_3')
+
+### Use the chatbot
+
+![chatbor_4](ReadMeImages/chatbor_4.png 'chatbor_4')
+
+![chatbor_5](ReadMeImages/chatbor_5.png 'chatbor_5')
+
+### Ask chatbot related to context
+
+![chatbor_6](ReadMeImages/chatbor_6.png 'chatbor_6')
+
+### Chatbot cannot answer outside the context
+
+![chatbor_7](ReadMeImages/chatbor_7.png 'chatbor_7')
